@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#48b38f"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lay2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#48b38f"
+                android:gravity="top|center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/linear_border"
+                        android:gravity="left|center_vertical"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/et_surname"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="#fff"
+                            android:gravity="left|center_vertical"
+                            android:hint="Введите ФИО:*"
+                            android:paddingLeft="5dp"
+                            android:textColor="#000"
+                            android:textCursorDrawable="@null"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/linear_border"
+                        android:gravity="left|center_vertical"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/et_telephone"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="#fff"
+                            android:gravity="left|center_vertical"
+                            android:hint="Введите телефон:*"
+                            android:inputType="number"
+                            android:maxLength="20"
+                            android:paddingLeft="5dp"
+                            android:phoneNumber="false"
+                            android:textColor="#000"
+                            android:textCursorDrawable="@null"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/linear_border"
+                        android:gravity="left|center_vertical"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/et_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="#fff"
+                            android:gravity="left|center_vertical"
+                            android:hint="Введите адрес:*"
+                            android:paddingLeft="5dp"
+                            android:textColor="#000"
+                            android:textCursorDrawable="@null"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/linear_border"
+                        android:gravity="left|center_vertical"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/et_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="#fff"
+                            android:gravity="left|center_vertical"
+                            android:hint="Введите электронную почту:*"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="5dp"
+                            android:textColor="#000"
+                            android:textCursorDrawable="@null"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/linear_border"
+                        android:gravity="left|center_vertical"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/et_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="#fff"
+                            android:gravity="left|center_vertical"
+                            android:hint="Введите пароль:*"
+                            android:inputType="textPassword"
+                            android:paddingLeft="5dp"
+                            android:textColor="#000"
+                            android:textCursorDrawable="@null"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/linear_border"
+                        android:gravity="left|center_vertical"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/et_password2"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="#fff"
+                            android:gravity="left|center_vertical"
+                            android:hint="Повторите пароль:*"
+                            android:inputType="textPassword"
+                            android:paddingLeft="5dp"
+                            android:textColor="#000"
+                            android:textCursorDrawable="@null"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left|center_vertical"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/aggrement"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Я оптовик"
+                            android:textColor="#fff"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/register"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="200dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button_shape2"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="Зарегистрироваться"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

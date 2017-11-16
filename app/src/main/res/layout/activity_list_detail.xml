@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="270dp"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="166dp"
+                android:layout_height="250dp"
+                android:src="@drawable/muslim1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="270dp"
+            android:layout_weight="0.5"
+            android:gravity="left|center_vertical"
+            android:orientation="vertical"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Имя"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/product_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Размер:"
+                    android:textColor="#000"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:adjustViewBounds="true"/>
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp">
+
+                </Spinner>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/product_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Цвет:"
+                    android:textColor="#000"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:adjustViewBounds="true"/>
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_weight="0.30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="0.1dp"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="5dp"
+                android:text="22550 Руб"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sale_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="22550 СОМ"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="22550 СОМ"
+                android:textColor="#000"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/product_content"
+                android:layout_width="0.1dp"
+                android:layout_height="0.1dp"
+                android:text="Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо Месо"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/product_id"
+                android:layout_width="0.1dp"
+                android:layout_height="0.1dp"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left|center_vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/linear_border2"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/minus"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="-"
+                        android:textColor="#000"
+                        android:textSize="40px"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="45dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/linear_border2"
+                    android:gravity="left|center_vertical"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:hint=""
+                        android:paddingLeft="5dp"
+                        android:text="1"
+                        android:textColor="#000"
+                        android:textCursorDrawable="@null"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/linear_border2"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/plus"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="+"
+                        android:textColor="#000"
+                        android:textSize="40px"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <Button
+
+                    android:id="@+id/addcart"
+                    android:layout_width="225dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/buttonshape1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="В КОРЗИНУ"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/line" />
+    </LinearLayout>
+</LinearLayout>

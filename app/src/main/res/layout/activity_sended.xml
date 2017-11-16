@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="#48b38f"
+    android:orientation="vertical">
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#48b38f"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical"
+            android:layout_margin="7dp">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ok"
+                android:layout_marginTop="25dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ЗАКАЗ ОТПРАВЛЕН!"
+                android:layout_marginTop="5dp"
+                android:textColor="#25279f"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="В ближайшее время с вами свяжется оператор для подтверждения заказа."
+                android:layout_marginTop="5dp"
+                android:textColor="#25279f"
+                android:textSize="17sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Оценка:"
+                android:layout_marginTop="5dp"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical|center_horizontal">
+                <Button
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/star1"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/star"/>
+                <Button
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/star2"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/star" />
+                <Button
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/star3"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/star" />
+                <Button
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/star4"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/star" />
+                <Button
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/star5"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/star" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Оставьте ваше отзывы:"
+                android:layout_marginTop="5dp"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/et_comments"
+                    android:gravity="top|left"
+                    android:background="#fff"
+                    android:textCursorDrawable="@null"
+                    android:textColor="#000"
+                    android:textSize="17sp"
+                    android:paddingLeft="5dp"
+                    android:hint="" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WWW.MUSLIMLINERU.RU"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+            <Button
+                android:layout_width="178dp"
+                android:layout_height="50dp"
+                android:id="@+id/home"
+                style="?android:attr/borderlessButtonStyle"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/buttonshape1"
+                android:text="ГЛАВНАЯ"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="10dp">
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/facebook"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/facebook"
+                    android:layout_marginRight="10dp" />
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/instagram"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/instagram"
+                    android:layout_marginRight="10dp"/>
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/odnoklassnik"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/odno"
+                    android:layout_marginRight="10dp" />
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/vkontakte"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/vk"/>
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
